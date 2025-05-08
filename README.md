@@ -3,6 +3,8 @@
 This package contains utility functions to be imported on streamlit if you
 are a Red Hat employee.
 
+You can install it like `pip install -e .` as it's not published yet.
+
 ## SSO
 
 You should follow [these docs](https://docs.streamlit.io/develop/concepts/connections/authentication)
