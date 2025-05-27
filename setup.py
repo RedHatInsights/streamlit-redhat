@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 setup(
@@ -8,12 +8,12 @@ setup(
     url="http://github.com/RedHatInsights/streamlit-redhat",
     author="Juan Díaz",
     author_email="jdiazsua@redhat.com",
-    packages=["streamlit_redhat"],
     install_requires=[
-        'streamlit',
-        'Authlib',
-        'watchdog',
-        'pyjwt[crypto]',
+        "streamlit",
+        "Authlib",
+        "watchdog",
+        "pyjwt[crypto]",
     ],
     zip_safe=False,
+    packages=find_packages(),  # This should find all submodules
 )
