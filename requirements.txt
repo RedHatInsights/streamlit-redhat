@@ -2,3 +2,4 @@ streamlit
 Authlib
 watchdog
 pyjwt[crypto]
+prometheus-client

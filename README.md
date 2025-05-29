@@ -67,3 +67,12 @@ Relevant links:
 - [Plans on a self-serviceable SSO enablement](https://source.redhat.com/groups/public/ciams/docs/company_single_sign_on_enablement_guide_3rd_party_idpsaml_federation_for_customers)
 - [Self service external SSO integration](https://source.redhat.com/groups/public/ciams/docs/draft_self_service_client_configuration_management~1)
 - Sample ticket requesting an app for auth.stage.redhat.com: [RITM2075444](https://redhat.service-now.com/help?id=rh_ticket&table=sc_req_item&sys_id=28e0293d3b05ae58aa748c9c24e45ab3)
+
+## Monitoring
+
+You can use the `streamlit_redhat.monitoring` module to expose Prometheus metrics
+to the Streamlit app.
+
+You can try an example running `streamlit run streamlit_redhat/monitoring/example.py`.
+
+It's a copy of the [streamlit_extras.prometheus](https://github.com/arnaudmiribel/streamlit-extras/tree/main/src/streamlit_extras/prometheus) module.
