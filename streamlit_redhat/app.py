@@ -7,12 +7,18 @@ from prometheus_client import Counter
 
 registry = streamlit_registry()
 
-USERS_COUNT = Counter(
-    name="users_count",
-    documentation="Number of users",
-    labelnames=("name",),
-    registry=registry,
-)
+
+@st.cache_resource
+def get_users_count():
+    return Counter(
+        name="users_count",
+        documentation="Number of users",
+        labelnames=("name",),
+        registry=registry,
+    )
+
+
+USERS_COUNT = get_users_count()
 
 
 if user_info:
